@@ -57,21 +57,9 @@ def shapiro_wilk(data):
 
 readMeanData(metricFilename + '_gp.stat', gp)
 readMeanData(metricFilename + '_alps.stat', alps)
-readMeanData(metricFilename + '_meab.stat', meab)
-readMeanData(metricFilename + '_almeab.stat',almeab)
-readMeanData(metricFilename + '_hyper.stat', hyperab)
-readMeanData(metricFilename + '_almecdab-ab-top.stat', almecdab)
-readMeanData(metricFilename + '_almeabcd-ab-pop.stat', almeabcdAB)
 
-readMeanData(metricFilename + '_gpcd.stat', gpcd)
-readMeanData(metricFilename + '_alpscd.stat', alpscd)
-readMeanData(metricFilename + '_mecd.stat', mecd)
-readMeanData(metricFilename + '_almecd.stat',almecd)
-readMeanData(metricFilename + '_hypercd.stat', hypercd)
-readMeanData(metricFilename + '_almeabcd.stat', almeabcd)
-
-data = [mecd, almecd, almeabcd, hypercd]
-labels = ['MAP-Elites','ALME-CD','ALME-ABCD', 'Hypercube']
+data = [gp, alps]
+labels = ['gp', 'alps']
 
 # for d in data:
 #     # print(shapiro(d)[1])
